@@ -8,7 +8,7 @@ from rest_framework import viewsets
 from .models import WeatherData
 from .serializers import WeatherDataSerializer
 
-API_KEY = "08891d49784ec48889360136932e98ce"  # Replace with your actual API key
+API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
 
 def get_weather(request):
     location = request.GET.get('location', '')
